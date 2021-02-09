@@ -17,7 +17,7 @@ header {
   margin-top: 4rem;
 }
 nav {
-  flex: auto;
+  flex: flex;
   padding: 0;
 }
 nav ul {
@@ -33,18 +33,17 @@ nav ul {
 }
 
 nav a {
-  display: inline-block;
+  display: flex;
   text-decoration: none;
   font-size: 2em;
   padding: 1rem 1rem;
   text-align: center;
   color:whitesmoke;  
-  border: 2px solid  rgb(123, 41, 182)#bbb;
+}
+li{
+  border-right: 2px solid  rgb(123, 41, 182)#bbb;
 }
 
-li:last-child {
-  float: right;
-}
 li a:hover {
   background-color: rgb(123, 41, 182);
 }
@@ -52,7 +51,7 @@ li a:hover {
 /********Sub headers********/
 
 h1, h2 {
-  display: inline;
+  display: inline-block;
   font-weight: bold;
   background-color: lightblue;
   font-size: 2em;
@@ -90,12 +89,16 @@ h1, h2 {
 /********Main********/
 
 main {
-  margin: 60px;
+  margin: 140px;
   margin-top: 30px;
 }
 
-/********Gallery********/
+p, ol{
+  line-height: 1.5;
+  max-width: 95ch;
+}
 
+/********Gallery********/
 
 
 
@@ -104,6 +107,7 @@ main {
 footer {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
   background-color: indigo;
   color: whitesmoke;
 }
